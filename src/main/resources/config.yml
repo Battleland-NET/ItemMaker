@@ -1,0 +1,5 @@
+messages:
+  holditem: "You need to hold an item in your hand"
+  onlyplayers: "Only players can do that"
+  getmoney: "You get ${bonus}, You now have ${money}"
+  getpermission: "You get the permission {permission}"

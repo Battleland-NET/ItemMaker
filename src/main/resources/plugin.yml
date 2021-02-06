@@ -1,0 +1,12 @@
+name: ItemMaker
+main: net.battleland.itemmaker.ItemMakerPlugin
+version: 0.1
+
+commands:
+  createitem:
+    aliases: [ ci ]
+    usage: /<command> [permission|coins:Int]
+
+depend:
+  - LuckPerms
+  - Essentials
