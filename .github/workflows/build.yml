@@ -14,7 +14,7 @@ jobs:
     - uses: eskatos/gradle-command-action@v1
       with:
         arguments: build
-    - name: Archive code coverage results
+    - name: Upload built JAR
       uses: actions/upload-artifact@v2
       with:
         name: ItemMaker.jar
