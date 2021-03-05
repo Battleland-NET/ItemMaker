@@ -24,10 +24,18 @@ class CreateItemCommand(var plugin: JavaPlugin) : CommandExecutor {
         }
 
         if (args[0].toIntOrNull() != null) {
+            if(!sender.hasPermission("createitem.money")) {
+                sender.sendMessage("§4You don't have permission")
+                return true
+            }
             val meta = handItem.itemMeta
             meta?.lore = listOf("§kc" + args[0])
             handItem.itemMeta = meta
         } else {
+            if(!sender.hasPermission("createitem.permission")) {
+                sender.sendMessage("§4You don't have permission")
+                return true
+            }
             val meta = handItem.itemMeta
             meta?.lore = listOf("§kp" + args[0])
             handItem.itemMeta = meta

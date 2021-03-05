@@ -4,8 +4,13 @@ version: 0.1
 
 commands:
   createitem:
-    aliases: [ ci ]
     usage: /<command> [permission|coins:Int]
+
+permissions:
+  createitem.money:
+    default: op
+  createitem.permission:
+    default: false
 
 depend:
   - LuckPerms
